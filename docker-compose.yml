@@ -1,0 +1,100 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgis/postgis:14-3.2
+    container_name: krishi_postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-krishi_drishti}
+      POSTGRES_USER: ${POSTGRES_USER:-krishi_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-krishi_password_2024}
+      POSTGRES_HOST_AUTH_METHOD: scram-sha-256
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/init.sql:/docker-entrypoint-initdb.d/01_init.sql
+      - ./database/seed_data.sql:/docker-entrypoint-initdb.d/02_seed.sql
+    networks:
+      - krishi_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U krishi_user -d krishi_drishti"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # pgAdmin for database management
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: krishi_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-admin@krishidrishti.com}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin123}
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    networks:
+      - krishi_network
+    depends_on:
+      - postgres
+
+  # FastAPI Backend
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: krishi_backend
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-krishi_user}:${POSTGRES_PASSWORD:-krishi_password_2024}@postgres:5432/${POSTGRES_DB:-krishi_drishti}
+      - SECRET_KEY=${SECRET_KEY:-your_super_secret_key_change_in_production_min_32_chars}
+      - ALGORITHM=${ALGORITHM:-HS256}
+      - ACCESS_TOKEN_EXPIRE_MINUTES=${ACCESS_TOKEN_EXPIRE_MINUTES:-30}
+      - REFRESH_TOKEN_EXPIRE_DAYS=${REFRESH_TOKEN_EXPIRE_DAYS:-7}
+    volumes:
+      - ./backend:/app
+      - ./backend/app/ml_models:/app/app/ml_models
+    networks:
+      - krishi_network
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # React Frontend
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: krishi_frontend
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./frontend/.env
+    environment:
+      - REACT_APP_API_URL=${REACT_APP_API_URL:-http://localhost:8000}
+      - REACT_APP_WEATHER_API_KEY=${REACT_APP_WEATHER_API_KEY:-your_weather_api_key}
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    networks:
+      - krishi_network
+    depends_on:
+      - backend
+    stdin_open: true
+    tty: true
+
+volumes:
+  postgres_data:
+  pgadmin_data:
+
+networks:
+  krishi_network:
+    driver: bridge

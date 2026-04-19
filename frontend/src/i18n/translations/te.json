@@ -1,0 +1,93 @@
+{
+  "app": {
+    "name": "కృషి దృష్టి",
+    "tagline": "AI-శక్తితో పంట సలహా"
+  },
+  "auth": {
+    "login": "లాగిన్",
+    "phone": "ఫోన్ నంబర్",
+    "enterPhone": "మీ ఫోన్ నంబర్ నమోదు చేయండి",
+    "sendOTP": "OTP పంపండి",
+    "verifyOTP": "OTP ధృవీకరించండి",
+    "enterOTP": "6 అంకెల OTP నమోదు చేయండి",
+    "resendOTP": "OTP మళ్లీ పంపండి",
+    "otpSent": "OTP విజయవంతంగా పంపబడింది",
+    "loginSuccess": "లాగిన్ విజయవంతమైంది"
+  },
+  "onboarding": {
+    "location": "స్థానం క్యాప్చర్ చేయండి",
+    "locationDesc": "ఖచ్చితమైన సిఫార్సుల కోసం మాకు మీ పొలం స్థానం అవసరం",
+    "getLocation": "నా స్థానం పొందండి",
+    "latitude": "అక్షాంశం",
+    "longitude": "రేఖాంశం",
+    "accuracy": "ఖచ్చితత్వం",
+    "next": "తరువాత",
+    "uploadSHC": "మట్టి ఆరోగ్య కార్డ్ అప్‌లోడ్ చేయండి",
+    "shcDesc": "విశ్లేషణ కోసం మీ మట్టి ఆరోగ్య కార్డ్ చిత్రాన్ని అప్‌లోడ్ చేయండి",
+    "selectImage": "చిత్రం ఎంచుకోండి",
+    "upload": "అప్‌లోడ్ చేయండి",
+    "farmDetails": "పొలం వివరాలు",
+    "farmName": "పొలం పేరు",
+    "farmSize": "పొలం పరిమాణం",
+    "unit": "యూనిట్",
+    "soilType": "మట్టి రకం",
+    "irrigation": "నీటిపారుదల రకం",
+    "region": "ప్రాంతం",
+    "district": "జిల్లా",
+    "state": "రాష్ట్రం",
+    "save": "సేవ్ చేయండి"
+  },
+  "dashboard": {
+    "welcome": "స్వాగతం",
+    "myFarms": "నా పొలాలు",
+    "recommendations": "పంట సిఫార్సులు",
+    "yieldPlan": "దిగుబడి ప్రణాళిక",
+    "settings": "సెట్టింగ్‌లు"
+  },
+  "recommendations": {
+    "title": "పంట సిఫార్సులు",
+    "suitability": "అనుకూలత స్కోర్",
+    "season": "సీజన్",
+    "duration": "వ్యవధి",
+    "days": "రోజులు",
+    "waterReq": "నీటి అవసరం",
+    "avgPrice": "సగటు ధర",
+    "perQuintal": "క్వింటాల్‌కు",
+    "avgCost": "సగటు ఖర్చు",
+    "perAcre": "ఎకరాకు",
+    "viewPlan": "దిగుబడి ప్రణాళిక చూడండి",
+    "noRecommendations": "సిఫార్సులు అందుబాటులో లేవు"
+  },
+  "yieldPlan": {
+    "title": "దిగుబడి ప్రణాళిక",
+    "baseline": "బేస్‌లైన్ అంచనా",
+    "optimized": "ఆప్టిమైజ్ అంచనా",
+    "yield": "దిగుబడి",
+    "cost": "ఖర్చు",
+    "revenue": "ఆదాయం",
+    "profit": "లాభం",
+    "increase": "పెరుగుదల",
+    "roi": "ROI మెరుగుదల",
+    "recommendations": "ఆప్టిమైజేషన్ సిఫార్సులు",
+    "priority": "ప్రాధాన్యత",
+    "action": "చర్య",
+    "impact": "ప్రభావం",
+    "timing": "సమయం",
+    "resources": "అవసరమైన వనరులు",
+    "difficulty": "కష్టం"
+  },
+  "common": {
+    "loading": "లోడ్ అవుతోంది...",
+    "error": "లోపం",
+    "success": "విజయం",
+    "cancel": "రద్దు చేయండి",
+    "confirm": "నిర్ధారించండి",
+    "back": "వెనుకకు",
+    "close": "మూసివేయండి",
+    "edit": "సవరించండి",
+    "delete": "తొలగించండి",
+    "save": "సేవ్ చేయండి",
+    "language": "భాష",
+    "logout": "లాగౌట్"
+  }
+}

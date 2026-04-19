@@ -1,0 +1,93 @@
+{
+  "app": {
+    "name": "ಕೃಷಿ ದೃಷ್ಟಿ",
+    "tagline": "AI-ಚಾಲಿತ ಬೆಳೆ ಸಲಹೆ"
+  },
+  "auth": {
+    "login": "ಲಾಗಿನ್",
+    "phone": "ದೂರವಾಣಿ ಸಂಖ್ಯೆ",
+    "enterPhone": "ನಿಮ್ಮ ದೂರವಾಣಿ ಸಂಖ್ಯೆಯನ್ನು ನಮೂದಿಸಿ",
+    "sendOTP": "OTP ಕಳುಹಿಸಿ",
+    "verifyOTP": "OTP ಪರಿಶೀಲಿಸಿ",
+    "enterOTP": "6 ಅಂಕಿಯ OTP ನಮೂದಿಸಿ",
+    "resendOTP": "OTP ಮರುಕಳುಹಿಸಿ",
+    "otpSent": "OTP ಯಶಸ್ವಿಯಾಗಿ ಕಳುಹಿಸಲಾಗಿದೆ",
+    "loginSuccess": "ಲಾಗಿನ್ ಯಶಸ್ವಿಯಾಗಿದೆ"
+  },
+  "onboarding": {
+    "location": "ಸ್ಥಳವನ್ನು ಸೆರೆಹಿಡಿಯಿರಿ",
+    "locationDesc": "ನಿಖರ ಶಿಫಾರಸುಗಳಿಗಾಗಿ ನಿಮ್ಮ ಹೊಲದ ಸ್ಥಳ ಅಗತ್ಯವಿದೆ",
+    "getLocation": "ನನ್ನ ಸ್ಥಳ ಪಡೆಯಿರಿ",
+    "latitude": "ಅಕ್ಷಾಂಶ",
+    "longitude": "ರೇಖಾಂಶ",
+    "accuracy": "ನಿಖರತೆ",
+    "next": "ಮುಂದೆ",
+    "uploadSHC": "ಮಣ್ಣಿನ ಆರೋಗ್ಯ ಕಾರ್ಡ್ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+    "shcDesc": "ವಿಶ್ಲೇಷಣೆಗಾಗಿ ನಿಮ್ಮ ಮಣ್ಣಿನ ಆರೋಗ್ಯ ಕಾರ್ಡ್ ಚಿತ್ರವನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ",
+    "selectImage": "ಚಿತ್ರ ಆಯ್ಕೆಮಾಡಿ",
+    "upload": "ಅಪ್‌ಲೋಡ್",
+    "farmDetails": "ಹೊಲದ ವಿವರಗಳು",
+    "farmName": "ಹೊಲದ ಹೆಸರು",
+    "farmSize": "ಹೊಲದ ಗಾತ್ರ",
+    "unit": "ಘಟಕ",
+    "soilType": "ಮಣ್ಣಿನ ಪ್ರಕಾರ",
+    "irrigation": "ನೀರಾವರಿ ಪ್ರಕಾರ",
+    "region": "ಪ್ರದೇಶ",
+    "district": "ಜಿಲ್ಲೆ",
+    "state": "ರಾಜ್ಯ",
+    "save": "ಉಳಿಸಿ"
+  },
+  "dashboard": {
+    "welcome": "ಸ್ವಾಗತ",
+    "myFarms": "ನನ್ನ ಹೊಲಗಳು",
+    "recommendations": "ಬೆಳೆ ಶಿಫಾರಸುಗಳು",
+    "yieldPlan": "ಇಳುವರಿ ಯೋಜನೆ",
+    "settings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
+  },
+  "recommendations": {
+    "title": "ಬೆಳೆ ಶಿಫಾರಸುಗಳು",
+    "suitability": "ಸೂಕ್ತತೆ ಸ್ಕೋರ್",
+    "season": "ಋತು",
+    "duration": "ಅವಧಿ",
+    "days": "ದಿನಗಳು",
+    "waterReq": "ನೀರಿನ ಅವಶ್ಯಕತೆ",
+    "avgPrice": "ಸರಾಸರಿ ಬೆಲೆ",
+    "perQuintal": "ಕ್ವಿಂಟಾಲ್‌ಗೆ",
+    "avgCost": "ಸರಾಸರಿ ವೆಚ್ಚ",
+    "perAcre": "ಎಕರೆಗೆ",
+    "viewPlan": "ಇಳುವರಿ ಯೋಜನೆ ನೋಡಿ",
+    "noRecommendations": "ಯಾವುದೇ ಶಿಫಾರಸುಗಳು ಲಭ್ಯವಿಲ್ಲ"
+  },
+  "yieldPlan": {
+    "title": "ಇಳುವರಿ ಯೋಜನೆ",
+    "baseline": "ಬೇಸ್‌ಲೈನ್ ಭವಿಷ್ಯ",
+    "optimized": "ಆಪ್ಟಿಮೈಸ್ ಭವಿಷ್ಯ",
+    "yield": "ಇಳುವರಿ",
+    "cost": "ವೆಚ್ಚ",
+    "revenue": "ಆದಾಯ",
+    "profit": "ಲಾಭ",
+    "increase": "ಹೆಚ್ಚಳ",
+    "roi": "ROI ಸುಧಾರಣೆ",
+    "recommendations": "ಆಪ್ಟಿಮೈಸೇಶನ್ ಶಿಫಾರಸುಗಳು",
+    "priority": "ಆದ್ಯತೆ",
+    "action": "ಕ್ರಿಯೆ",
+    "impact": "ಪರಿಣಾಮ",
+    "timing": "ಸಮಯ",
+    "resources": "ಅಗತ್ಯವಿರುವ ಸಂಪನ್ಮೂಲಗಳು",
+    "difficulty": "ಕಷ್ಟ"
+  },
+  "common": {
+    "loading": "ಲೋಡ್ ಆಗುತ್ತಿದೆ...",
+    "error": "ದೋಷ",
+    "success": "ಯಶಸ್ಸು",
+    "cancel": "ರದ್ದುಮಾಡಿ",
+    "confirm": "ದೃಢೀಕರಿಸಿ",
+    "back": "ಹಿಂದೆ",
+    "close": "ಮುಚ್ಚಿ",
+    "edit": "ಸಂಪಾದಿಸಿ",
+    "delete": "ಅಳಿಸಿ",
+    "save": "ಉಳಿಸಿ",
+    "language": "ಭಾಷೆ",
+    "logout": "ಲಾಗ್ಔಟ್"
+  }
+}

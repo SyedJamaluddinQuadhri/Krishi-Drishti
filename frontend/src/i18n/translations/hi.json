@@ -1,0 +1,93 @@
+{
+  "app": {
+    "name": "कृषि दृष्टि",
+    "tagline": "एआई-संचालित फसल सलाह"
+  },
+  "auth": {
+    "login": "लॉगिन",
+    "phone": "फोन नंबर",
+    "enterPhone": "अपना फोन नंबर दर्ज करें",
+    "sendOTP": "ओटीपी भेजें",
+    "verifyOTP": "ओटीपी सत्यापित करें",
+    "enterOTP": "6 अंकों का ओटीपी दर्ज करें",
+    "resendOTP": "ओटीपी फिर से भेजें",
+    "otpSent": "ओटीपी सफलतापूर्वक भेजा गया",
+    "loginSuccess": "लॉगिन सफल"
+  },
+  "onboarding": {
+    "location": "स्थान कैप्चर करें",
+    "locationDesc": "सटीक सिफारिशों के लिए हमें आपके खेत का स्थान चाहिए",
+    "getLocation": "मेरा स्थान प्राप्त करें",
+    "latitude": "अक्षांश",
+    "longitude": "देशांतर",
+    "accuracy": "सटीकता",
+    "next": "अगला",
+    "uploadSHC": "मृदा स्वास्थ्य कार्ड अपलोड करें",
+    "shcDesc": "विश्लेषण के लिए अपना मृदा स्वास्थ्य कार्ड चित्र अपलोड करें",
+    "selectImage": "छवि चुनें",
+    "upload": "अपलोड करें",
+    "farmDetails": "खेत का विवरण",
+    "farmName": "खेत का नाम",
+    "farmSize": "खेत का आकार",
+    "unit": "इकाई",
+    "soilType": "मिट्टी का प्रकार",
+    "irrigation": "सिंचाई प्रकार",
+    "region": "क्षेत्र",
+    "district": "जिला",
+    "state": "राज्य",
+    "save": "सहेजें"
+  },
+  "dashboard": {
+    "welcome": "स्वागत है",
+    "myFarms": "मेरे खेत",
+    "recommendations": "फसल सिफारिशें",
+    "yieldPlan": "उपज योजना",
+    "settings": "सेटिंग्स"
+  },
+  "recommendations": {
+    "title": "फसल सिफारिशें",
+    "suitability": "उपयुक्तता स्कोर",
+    "season": "मौसम",
+    "duration": "अवधि",
+    "days": "दिन",
+    "waterReq": "पानी की आवश्यकता",
+    "avgPrice": "औसत मूल्य",
+    "perQuintal": "प्रति क्विंटल",
+    "avgCost": "औसत लागत",
+    "perAcre": "प्रति एकड़",
+    "viewPlan": "उपज योजना देखें",
+    "noRecommendations": "कोई सिफारिश उपलब्ध नहीं है"
+  },
+  "yieldPlan": {
+    "title": "उपज योजना",
+    "baseline": "आधार भविष्यवाणी",
+    "optimized": "अनुकूलित भविष्यवाणी",
+    "yield": "उपज",
+    "cost": "लागत",
+    "revenue": "राजस्व",
+    "profit": "लाभ",
+    "increase": "वृद्धि",
+    "roi": "आरओआई सुधार",
+    "recommendations": "अनुकूलन सिफारिशें",
+    "priority": "प्राथमिकता",
+    "action": "कार्रवाई",
+    "impact": "प्रभाव",
+    "timing": "समय",
+    "resources": "आवश्यक संसाधन",
+    "difficulty": "कठिनाई"
+  },
+  "common": {
+    "loading": "लोड हो रहा है...",
+    "error": "त्रुटि",
+    "success": "सफलता",
+    "cancel": "रद्द करें",
+    "confirm": "पुष्टि करें",
+    "back": "वापस",
+    "close": "बंद करें",
+    "edit": "संपादित करें",
+    "delete": "हटाएं",
+    "save": "सहेजें",
+    "language": "भाषा",
+    "logout": "लॉगआउट"
+  }
+}

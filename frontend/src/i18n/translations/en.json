@@ -1,0 +1,93 @@
+{
+  "app": {
+    "name": "Krishi Drishti",
+    "tagline": "AI-Powered Crop Advisory"
+  },
+  "auth": {
+    "login": "Login",
+    "phone": "Phone Number",
+    "enterPhone": "Enter your phone number",
+    "sendOTP": "Send OTP",
+    "verifyOTP": "Verify OTP",
+    "enterOTP": "Enter 6-digit OTP",
+    "resendOTP": "Resend OTP",
+    "otpSent": "OTP sent successfully",
+    "loginSuccess": "Login successful"
+  },
+  "onboarding": {
+    "location": "Capture Location",
+    "locationDesc": "We need your farm location for accurate recommendations",
+    "getLocation": "Get My Location",
+    "latitude": "Latitude",
+    "longitude": "Longitude",
+    "accuracy": "Accuracy",
+    "next": "Next",
+    "uploadSHC": "Upload Soil Health Card",
+    "shcDesc": "Upload your Soil Health Card image for analysis",
+    "selectImage": "Select Image",
+    "upload": "Upload",
+    "farmDetails": "Farm Details",
+    "farmName": "Farm Name",
+    "farmSize": "Farm Size",
+    "unit": "Unit",
+    "soilType": "Soil Type",
+    "irrigation": "Irrigation Type",
+    "region": "Region",
+    "district": "District",
+    "state": "State",
+    "save": "Save"
+  },
+  "dashboard": {
+    "welcome": "Welcome",
+    "myFarms": "My Farms",
+    "recommendations": "Crop Recommendations",
+    "yieldPlan": "Yield Planning",
+    "settings": "Settings"
+  },
+  "recommendations": {
+    "title": "Crop Recommendations",
+    "suitability": "Suitability Score",
+    "season": "Season",
+    "duration": "Duration",
+    "days": "days",
+    "waterReq": "Water Requirement",
+    "avgPrice": "Avg Price",
+    "perQuintal": "per quintal",
+    "avgCost": "Avg Cost",
+    "perAcre": "per acre",
+    "viewPlan": "View Yield Plan",
+    "noRecommendations": "No recommendations available"
+  },
+  "yieldPlan": {
+    "title": "Yield Plan",
+    "baseline": "Baseline Prediction",
+    "optimized": "Optimized Prediction",
+    "yield": "Yield",
+    "cost": "Cost",
+    "revenue": "Revenue",
+    "profit": "Profit",
+    "increase": "Increase",
+    "roi": "ROI Improvement",
+    "recommendations": "Optimization Recommendations",
+    "priority": "Priority",
+    "action": "Action",
+    "impact": "Impact",
+    "timing": "Timing",
+    "resources": "Resources Needed",
+    "difficulty": "Difficulty"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "back": "Back",
+    "close": "Close",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "language": "Language",
+    "logout": "Logout"
+  }
+}
